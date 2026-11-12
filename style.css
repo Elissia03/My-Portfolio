@@ -1,0 +1,264 @@
+
+
+body {
+    background-color:  #100B1F;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1B1230;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Story Script", sans-serif;
+    font-size: 48px;
+    color:  #F4EEFF;
+    text-align: center;
+}
+
+h2 {
+    color: #F4EEFF;
+}
+
+p {
+    font-size: 16px;
+    color: #F4EEFF;
+    margin-top: 0;
+}
+
+header {
+background-color: #100B1F;
+padding: 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: #100B1F;
+    background-color: #78C9FF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #9B7AE8
+}
+
+.Works {
+    background-color: #24183D;
+    color: #9B7AE8;
+    padding: 40px;
+    margin: 30px 0px;
+    border-radius: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.work-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.Welcome {
+    background-color: #100B1F;
+    color: #78C9FF;
+    padding: 40px;
+}
+
+.Welcome img {
+   width: 70%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.button {
+    background-color: #306670;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+
+.content-blocks {  
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 33px;
+    margin-right: 33px
+}
+
+@media (min-width: 700px) {
+    header {
+        flex-direction: row;
+    }
+}
+ 
+.art-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.art-container {
+    width: 420px;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    background-color: #dce5d8
+    border-radius: 15px;
+}
+
+.art-pieces {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.art-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #100B1F;
+    border-radius: 10px
+
+}
+
+.art-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.art-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.art-container img {
+    transition: transform 0.3s ease;
+}
+
+.art-container img:hover {
+    transform: scale(1.04)
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 80px 10%;
+    min-height: 70vh;
+}
+
+.profile-bubble {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #b99aff;
+    box-shadow: 0 0 25px #9064e8;
+    flex-shrink: 0;
+}
+
+.profile-bubble img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.welcome-text {
+    max-width: 500px;
+    color: #eee3ff;
+}
+
+.welcome-text h1 {
+    font-size:55px;
+    color: #c7a6ff;
+    margin-bottom: 10px;
+}
+
+.welcome-text h2 {
+    color: #e0caff;
+    font-size: 28px;
+}
+
+.welcome-text p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.tagline {
+    color: #b99aff;
+    letter-spacing: 2px;
+}
+
+.star {
+    position: absolute;
+    color: #e3ccff;
+    text-shadow: 0 0 10px #b99aff;
+    z-index: 3;
+}
+
+.star-one {
+    top: 15px;
+    left: 15px;
+    font-size: 25px;
+}
+
+.star-two {
+    bottom: 20px;
+    right: -25px;
+    font-size: 30px;
+}
+
+.star-three {
+    top: 45%;
+    right: -40px;
+    font-size: 18px;
+}
+
+.welcome-card {
+    background: rgba(65, 43, 105, 0.55);
+    border: 2px solid #9d7bd8;
+    border-radius: 25px;
+    padding: 30px;
+    max-width: 450px;
+
+    box-shadow: 0 0 20px rgba(157, 123, 216, 0.35);
+    backdrop-filter: blur(8px);
+}
+
+.welcome-card h2 {
+    color: #d5b9ff;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.welcome-card p {
+    color: #eee3ff;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
